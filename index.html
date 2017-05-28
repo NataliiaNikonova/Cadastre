@@ -48,37 +48,38 @@
 			</div>
 
 			<div class="separator">
-				<div class="text_or">OU</div>	
+				<span class="text_or">OU</span>	
 			</div>
 
 					<div class="form_conteiner">
-						<div class="form_item">
-							<input type="text" maxlength="255" name="First_name" id="edit_first_name" placeholder="First Name" aria-label="First Name">
-						</div>
+						<form class="form_item" action="#" method="post">
+							<input type="text" maxlength="255" name="First_name"  placeholder="First Name" aria-label="First Name">
+						</form>
 
-						<div class="form_item">
-							<input type="text" maxlength="255" name="last_name" id="edit_flast_name" placeholder="Last Name" aria-label="Last Name">
-						</div>
+						<form class="form_item" action="#" method="post">
+							<input type="text" maxlength="255" name="last_name"  placeholder="Last Name" aria-label="Last Name">
+						</form>
 
-						<div class="form_item">
-							<input type="text" maxlength="255" name="email" id="edit_email" placeholder="Email Address" aria-label="Email Address">
-						</div>
+						<form class="form_item" action="#" method="post">
+							<input type="email" maxlength="255" name="email"  required placeholder="Email Address" aria-label="Email Address">
+						</form>
 
-						<div class="form_item">
-							<input type="password" maxlength="255" name="password" id="edit_password" placeholder="Choose Password" aria-label="Choose Password">
-						</div>
+						<form class="form_item" action="#" method="post">
+							<input type="password" maxlength="255" name="password" required placeholder="Choose Password" aria-label="Choose Password">
+						</form>
 
-						<div class="form_item">
-							<input type="password" maxlength="255" name="pass_confirm" id="edit_pass_confirm" placeholder="Password confirm" aria-label="Password confirm">
-						</div>
+						<form class="form_item" action="#" method="post">
+							<input type="password" maxlength="255" name="pass_confirm" required placeholder="Password confirm" aria-label="Password confirm">
+						</form>
 						
-						<div class="form_item">
-							<input type="checkbox" name="send_me" id="edit-receive" value="1" checked="checked" class="form-checkbox">
-							<span class="form-checkbox-title">Send me Youbike updates and tips</span>
-						</div>
+						<form class="form_item" action="#" method="post">
+							<input type="checkbox" name="send_me" id="my-id" value="1" checked="checked" class="form-checkbox">
+							<label for="my-id">Send me Youbike updates and tips</label>
+						</form>
 					</div>
 					
-					<span class="button">Create my Account</span>
+					<span><input type="submit" class="button" value="Create my Account"></span>
+					
 	</div>
 
 </div>

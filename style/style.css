@@ -113,7 +113,7 @@ body {
 	font-size: 24px;
 	text-align: center;
 	color: white;
-	border-bottom: 3px solid white;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 .signup {
@@ -156,23 +156,50 @@ body {
 .separator {
 	clear: both;
 	display: block;
-	margin: 32px auto 13px;
-	border-top: 1px solid #8d8e8d;
-	text-align: center;  
-	z-index: 1;
-}	
+	bottom: 11px;
+	padding: 20px 0;
+}
+
 
 .text_or {
-	position: relative;
-	bottom: 11px;
-	margin-top: 0;
-	margin-right: 115px;
-	margin-left: 115px;
-	padding: 0px 5px;
+	width: 100%;
+	margin: 0px;
+	padding: 0;
+	line-height: 20px;
+	text-align: center;
 	color: #8d8e8d;
-	background: rgba(0, 0, 0, 0.5);
-	z-index: 2;
 }
+
+.text_or:before {
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	height: 1px;
+	content: " ";
+	width: 120px;
+	text-shadow: none;
+ 	background-color: black;
+ 	float: left;
+
+
+	/*margin: 32px auto 13px;
+	border-top: 1px solid #8d8e8d;*/
+}
+
+.text_or:after {
+	display: inline-block;
+	margin-top: 10px;
+ 	margin-bottom: 5px;
+ 	height: 1px;
+ 	content: " ";
+	width: 120px;
+	text-shadow: none;
+ 	background-color: black;
+ 	float: right;
+	/*margin: 32px auto 13px;
+	border-top: 1px solid #8d8e8d;*/
+}
+
 
 .form_item {
 	position: relative;
@@ -181,12 +208,6 @@ body {
 
 .edit_first_name {
 	position: relative;
-}
-
-label {
-	position: absolute;
-	color: grey;
-	text-shadow: none;
 }
 
 input {
@@ -200,6 +221,11 @@ input {
 	border-bottom: 1px solid grey;
 }
 
+input:focus {
+	border: none;
+	background: #1b5288;
+	box-shadow: 0 0 5px 2px #6c9ed0;
+}
 
 #edit-receive {
 	display: inline-block;
@@ -212,9 +238,22 @@ input {
 	color: #8d8e8d;
 }
 
+.form-checkbox {
+	width: 20px;
+	text-align: left;
+	float: left;
+	box-shadow: none;
+}
+
+label {
+	color: #cccccc;
+}
+
 
 .button {
 	display: inline-block;
+	height: 40px;
+	width: 150px;
 	padding: 12px;
 	color: white;
 	background: linear-gradient(to top, #2e7ac4, #50aedb);
