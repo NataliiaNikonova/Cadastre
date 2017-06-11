@@ -36,8 +36,13 @@ body {
 .row2 p {
 	display: inline;
 	line-height: 40px;
-	padding: 0 15px;
+	padding: 0 15px 0 27px;
 	float: left;
+}
+
+.flag {
+	background-image: url(../image/flag.png);
+	background-repeat: no-repeat;
 }
 
 .fon {
@@ -117,7 +122,8 @@ body {
 }
 
 .signup {
-	text-align: center;}
+	text-align: center;
+}
 
 .login_fb {
 	margin-left: auto;
@@ -157,7 +163,7 @@ body {
 	clear: both;
 	display: block;
 	bottom: 11px;
-	padding: 20px 0;
+	padding: 20px 0 0;
 }
 
 
@@ -213,6 +219,7 @@ body {
 input {
 	width: 262px;
 	height: 19px;
+	margin-top: 20px;
 	background: black;
 	text-shadow: none;
 	padding: 7px;
@@ -249,6 +256,13 @@ label {
 	color: #cccccc;
 }
 
+label p {
+	margin-top: 20px;
+}
+
+.button span {
+	height: 40px;
+}
 
 .button {
 	display: inline-block;
@@ -259,7 +273,6 @@ label {
 	background: linear-gradient(to top, #2e7ac4, #50aedb);
 	border: 1px solid transparent;
 	border-radius: 5px;
-
 }
 
 .button:hover {
@@ -270,7 +283,6 @@ label {
 }
 
 .footer {
-	margin: 18px; 
 	color: #cccccc;
 	text-align: center;
 }
